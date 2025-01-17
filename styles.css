@@ -1,0 +1,185 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0073e6;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .form-section,
+  .cards-section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #0073e6;
+  }
+  
+  /* Formulario */
+  form {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Tarjetas */
+  /* Contenedor principal */
+/* Configuración global */
+/* Contenedor principal */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+/* Formulario y tarjetas */
+.form-section, 
+.cards-section {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Tarjetas */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.card {
+  background: #f4f4f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen oculta por defecto */
+.card-image {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.card-image.hidden {
+  display: none;
+}
+
+.card-content.hidden {
+  display: none;
+}
+
+
+
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .card-image, .card-content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    display: none; /* Mantiene elementos invisibles */
+  }
+  
+  
