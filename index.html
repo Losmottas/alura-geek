@@ -3,76 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App con HTML y CSS</title>
+  <title>Tienda Nintendo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Mi Aplicación</h1>
+    <h1>Consolas Nintendo</h1>
     <nav>
       <a href="#home">Inicio</a>
       <a href="#about">Acerca de</a>
       <a href="#contact">Contacto</a>
     </nav>
   </header>
-
+  
   <main>
-    <div class="content-wrapper">
-      <!-- Formulario -->
-      <section class="form-section">
-        <h2>Formulario</h2>
-        <form id="myForm">
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required>
-  
-          <label for="email">Correo:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-  
-          <div class="form-buttons">
-            <button type="submit">Enviar</button>
-            <button type="button" id="clearButton">Limpiar</button>
-          </div>
-        </form>
-      </section>
-  
-      <!-- Tarjetas -->
-      <!-- Tarjetas -->
-<section class="cards-section">
-    <h2>Consolas Nintendo</h2>
-    <div class="cards">
-      <!-- Tarjeta Nintendo Switch -->
-      <div class="card" data-console="switch">
-        <div class="card-content">
-          <h3>Nintendo Switch</h3>
-          <p>Precio: $299.99 USD</p>
-          <p>La consola híbrida de Nintendo que puedes usar como portátil o conectada a la TV.</p>
-        </div>
-        <img src="oled.jpg" alt="Nintendo Switch" class="card-image hidden">
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+      <h2>Listado de consolas</h2>
+      <div class="productos-container">
+        <!-- Aquí se renderizarán las tarjetas dinámicamente -->
+        <p class="no-productos">No se han agregado productos</p>
       </div>
-      <!-- Tarjeta Nintendo Wii -->
-      <div class="card" data-console="wii">
-        <div class="card-content">
-          <h3>Nintendo Wii</h3>
-          <p>Precio: $149.99 USD</p>
-          <p>Una consola clásica que ofrece diversión familiar con controles de movimiento.</p>
-        </div>
-        <img src="wii.jpg" alt="Nintendo Wii" class="card-image hidden">
-      </div>
-    </div>
-  </section>
-  
-    </div>
+    </section>
+
+    <!-- Sección de Formulario -->
+    <section class="formulario">
+      <h1>Agregar Producto</h1>
+      <form id="form-agregar">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="url" id="imagen" placeholder="URL de la imagen" required />
+        <button class="form-buttons" type="submit">Añadir Producto</button>
+      </form>
+    </section>
   </main>
-  
-  
-  
-  
 
   <footer>
-    <p>&copy; desarollado por josh</p>
+    <p>&copy; 2025 Desarrollado por josh</p>
   </footer>
+
+  <script type="module" src="js/renderCards.js"></script>
+  <script type="module" src="js/addProduct.js"></script>
 </body>
 </html>

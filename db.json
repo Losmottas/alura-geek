@@ -1,0 +1,25 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Nintendo Switch",
+      "descripcion": "La consola híbrida de Nintendo que puedes usar como portátil o conectada a la TV",
+      "precio": 299.99,
+      "imagen": "images/oled.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Nintendo Wii",
+      "descripcion": "Una consola clásica que ofrece diversión familiar con controles de movimiento",
+      "precio": 149.99,
+      "imagen": "images/wii.jpg"
+    },
+    {
+      "id": "e7c6",
+      "nombre": "Nintendo switch lite",
+      "descripcion": "Diseñada para juego portatil",
+      "precio": 199,
+      "imagen": "images/lite.png"
+    }
+  ]
+}
